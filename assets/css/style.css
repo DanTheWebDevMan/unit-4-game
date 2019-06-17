@@ -34,6 +34,7 @@ body {
     align-items: flex-start;
     float:left;
     position: relative;
+    display: inline-block;
 }
 
 .ntg {
@@ -44,7 +45,7 @@ body {
     margin-bottom: 10px;
     font-size: 28pt;
     padding-left: 5px;
-    float:left;
+    display: inline-block;
 }
 
 .score {
@@ -53,8 +54,9 @@ body {
     padding-left: 5px;
     width: 15%;
     height: 100px;
-    align-content: center;
-    float:left;
+    position: fixed;
+    display: inline-block;
+   
 }
 #images{ 
     margin: 5px;
@@ -68,6 +70,7 @@ body {
     width: 25%;
     color: white;
     padding: 5px;
+    font-size: 14pt;
     
 }
 
