@@ -1,0 +1,48 @@
+h1 {
+    background-color: orange;
+    color: white;
+    width: 25%;
+    padding-left: 50px;
+    margin-left: 10px;
+}
+
+
+#instructions {
+    background-color: #FFEBCD;
+    width: 40%;
+    color: green;
+    margin-left: 10px;
+    padding-bottom: 50px;
+}
+
+#currentscore {
+    background-color: green;
+    width: 30%;
+}
+
+#ntg {
+    background-color: green;
+    width: 25%;
+    height: 100px;
+    width: 20%;
+}
+
+#images{ 
+    margin: 5px;
+}
+
+#score {
+    background-color: #00FFFF;
+    height: 100px;
+    width: 15%;
+    
+
+}
+
+#total {
+    background-color: #008080;
+}
+
+#points {
+    background-color: #008080;
+}
