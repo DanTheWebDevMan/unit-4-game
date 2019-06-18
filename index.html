@@ -30,25 +30,32 @@
 </div>
 
 <div class="block">
-    <div class="ntg">Random Number</div>  
-    <div class="score">
-        <p>Wins: </p>
-        <p>Losses: </p>
+    <div class="numberToMatch">
+        <p>Random Number:  <span id= "random-number"></span>
+            </p>
         </div>
-    </div>
-    <br>
-<div id="images">
-       <img src="assets/images/crystal1.jpg" alt="c1" height="100px" width="100px">
-       <img src="assets/images/crystal2.jpg" alt="c2" height="100px" width="100px">
-       <img src="assets/images/crystal3.jpg" alt="c3" height="100px" width="100px">
-       <img src="assets/images/crystal4.jpg" alt="c4" height="100px" width="100px">
+
+    <div class="score">
+        <p> Wins : <span id= "wins"></span>
+            </p>
+        <p> Losses: <span id= "losses"></span>
+            </p>
+        </div>
+
     </div>
 
-<div id="total">Your total score is: <span id="currentscore"></span>
+        <div id="gems">
+       <img src="assets/images/crystal1.jpg" alt="g1" height="100px" width="100px">
+       <img src="assets/images/crystal2.jpg" alt="g2" height="100px" width="100px">
+       <img src="assets/images/crystal3.jpg" alt="g3" height="100px" width="100px">
+       <img src="assets/images/crystal4.jpg" alt="g4" height="100px" width="100px">
+    </div>
+
+<div id="total">Your total score is:
 </div>
 
 <div id="points">
-    <p>0</p>
+        <span id="currentScore"></span>
     </div>
-
+    <link rel="javascript" href="assets/javascript/game.js">
 </body>

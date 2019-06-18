@@ -26,42 +26,42 @@ body {
     font-size: 14pt;
 }
 
-/* block is the parent div while #ntg and #score are child**//
+/* block is the parent div while #ntg and #score are child**/
 .block {
     display:flex;
     align-items: left;
-    height: 100px;
     align-items: flex-start;
     position: relative;
     display: inline-block;
+    margin-bottom: 10px;
 }
 
-.ntg {
+.numberToMatch {
     background-color: hsla(120, 45%, 45%, 1);
-    width: 25%;
+    width: 50%;
     margin-left: 10px;
-    font-size: 28pt;
+    font-size: 20pt;
     padding-left: 5px;
     padding-bottom: 10px;
-    display: inline-block;
-    Padding-top: 40px;
-    padding-bottom: 20px;
     align-content: center;
+    height: 100px;
+    float: left;
 }
 
 .score {
     background-color: #00FFFF;
     margin-left: 10px;
     padding-left: 5px;
-    width: 10%;
+    width: 30%;
     display: inline-block;
     font-size: 14pt;
     position: relative;
     padding-bottom: 5px;
+    height: 100px;
    
 }
-#images{ 
-    margin: 5px;
+#gems{ 
+    margin-bottom:10px;
     margin-left: 10px;
 }
 
