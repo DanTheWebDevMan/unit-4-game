@@ -24,14 +24,14 @@ function startGame (){
     $('#losses').text(lossCounter);*/
 
 //generate random target score (b/w 19-120)
-    var targetScore = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
+    targetScore = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
         console.log ("target score is", targetScore);
     $('#random-number').text(targetScore);
 
 // Have array choose 4 #s between 1 and 12
 var buttonValues = [];
 for (var i = 0; i < 4; i++) {
-    buttonValues.push(Math.round(Math.random() * 12 + 1));
+    $('#button' + (i + 1)).attr('value', Math.round(Math.random() * 12 + 1));
         console.log(buttonValues);
     }
 //have random #s assigned to each gem
@@ -48,20 +48,20 @@ var playgame = function() {
 
     currentScore = currentScore + (Number($(this).attr('value')));
     $('#yourScore').text(currentScore)
+    console.log("current score: " + currentScore);
+    console.log("target score: " + targetScore);
 
-    if (currentScore === targetScore){
+    if (currentScore === targetScore) {
+        winCounter++;
         $('#currentScore').text(currentScore);
         $('#wins').text(winCounter);
-        winCounter++;
+        startGame();
     }
     else if (currentScore > targetScore){
+        lossCounter++;
         $("#yourScore").text(currentScore);
         $("#losses").text(lossCounter);
-        lossCounter++;
-    }
-    else {
-        reset();
-        
+        startGame();
     }
 }
 // event listener for each clicked button
