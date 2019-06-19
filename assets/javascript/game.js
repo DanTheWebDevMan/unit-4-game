@@ -13,15 +13,15 @@ var currentScore = 0;
 var winCounter = 0;
 var lossCounter = 0;
 var targetScore = 0;
-var crystalBtn = $('#crystalButton');
+
 
 // game function
 function startGame (){
     currentScore = 0;
     $("#yourScore").text(currentScore);
 
-    $('#wins').text(winCounter);
-    $('#losses').text(lossCounter);
+    /*$('#wins').text(winCounter);
+    $('#losses').text(lossCounter);*/
 
 //generate random target score (b/w 19-120)
     var targetScore = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
@@ -31,7 +31,7 @@ function startGame (){
 // Have array choose 4 #s between 1 and 12
 var buttonValues = [];
 for (var i = 0; i < 4; i++) {
-    buttonValues.push(Math.round(Math.random() * 12))
+    buttonValues.push(Math.round(Math.random() * 12 + 1));
         console.log(buttonValues);
     }
 //have random #s assigned to each gem
@@ -51,19 +51,23 @@ var playgame = function() {
 
     if (currentScore === targetScore){
         $('#currentScore').text(currentScore);
-        winCounter++;
         $('#wins').text(winCounter);
+        winCounter++;
     }
     else if (currentScore > targetScore){
         $("#yourScore").text(currentScore);
-        lossCounter++;
         $("#losses").text(lossCounter);
+        lossCounter++;
     }
     else {
-        //reset
+        reset();
+        
     }
 }
-
 // event listener for each clicked button
     $('.crystalButton').on('click', playgame);
 });
+
+//ISSUE WITH CODES:
+//Each click increases a loss even if I don't surpass Target Score*/
+//Does not Reset even when target score is reached
