@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <head>
    <title> Crystal counting game</title>
-   <link rel="stylesheet" href="assets/css/style.css">
+    <link rel= "stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
    <div id="header1">
@@ -31,31 +32,45 @@
 
 <div class="block">
     <div class="numberToMatch">
-        <p>Random Number:  <span id= "random-number"></span>
+        <p> Target Score<span id= "random-number"></span>
             </p>
         </div>
 
     <div class="score">
-        <p> Wins : <span id= "wins"></span>
-            </p>
-        <p> Losses: <span id= "losses"></span>
-            </p>
+        <div class= "Wins"><span id="wins"></span>
+            </div>  
+        <div class="Losses"><span id="losses"></span>
+            </div>
         </div>
-
     </div>
 
-        <div id="gems">
-       <img src="assets/images/crystal1.jpg" alt="g1" height="100px" width="100px">
-       <img src="assets/images/crystal2.jpg" alt="g2" height="100px" width="100px">
-       <img src="assets/images/crystal3.jpg" alt="g3" height="100px" width="100px">
-       <img src="assets/images/crystal4.jpg" alt="g4" height="100px" width="100px">
+    <div class="crystal">
+
+        <button class='crystalButton' id='button1'>
+            <img src="assets/images/crystal1.jpg" alt="g1" height="100px" width="100px">
+        </button>
+
+        <button class='crystalButton' id='button2'>
+            <img src="assets/images/crystal2.jpg" alt="g2" height="100px" width="100px">
+        </button>
+
+        <button class='crystalButton' id='button3'>
+            <img src="assets/images/crystal3.jpg" alt="g3" height="100px" width="100px">
+        </button>
+
+        <button class='crystalButton' id='button4'>
+            <img src="assets/images/crystal4.jpg" alt="g4" height="100px" width="100px">
+        </button>
     </div>
 
-<div id="total">Your total score is:
-</div>
-
-<div id="points">
-        <span id="currentScore"></span>
+<div id="total">Your total score is: 
     </div>
-    <link rel="javascript" href="assets/javascript/game.js">
+    <br>
+    <br>
+    
+<div id="yourScore"> <span id="currentScore"></span>
+    </div>
+
+<script src="assets/javascript/game.js"></script>
+
 </body>
