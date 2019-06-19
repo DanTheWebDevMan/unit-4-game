@@ -7,7 +7,7 @@ points added together and shown in total section
 if total > random #, add +1 to losses and reset random#
 if total = random #, +1 to wins and reset random # */
 
-$(document.ready(function(){
+$(document).ready(function(){
 // define global variables //
 var currentScore = 0;
 var winCounter = 0;
@@ -66,4 +66,4 @@ var playgame = function() {
 
 // event listener for each clicked button
     $('.crystalButton').on('click', playgame);
-}
+});
